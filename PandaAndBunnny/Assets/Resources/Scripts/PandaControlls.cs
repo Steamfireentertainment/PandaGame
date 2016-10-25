@@ -14,7 +14,7 @@ public class PandaControlls : MonoBehaviour {
 	bool BootySlammming; //Boolean variable BootySlamming [used to stop player calling the function multiple times].
 	bool Jumping; // boolean variable Jumping [Used to stop the player jumping multiple times].
 	Transform cam;// Transform variable cam [Camera that is following the player].
-
+	public bool Unlocking = false;
 	void Start () // Use this for initialization
 	{
 		cam = GameObject.Find("Main Camera").transform; // Sets cam to the "Main camera" object in the scene.
@@ -42,7 +42,7 @@ public class PandaControlls : MonoBehaviour {
 				num = 0; // sets num to 0.
 			}
 		} 
-		if(Input.GetAxis("Jump") > 0 && IsGrounded()){ // checks if the Jump button is pressed and the player is on the ground.
+		if(Input.GetAxis("Jump") > 0 && IsGrounded() && !Unlocking){ // checks if the Jump button is pressed and the player is on the ground.
 			StartCoroutine(Jump()); // Starts coroutine Jump.
 		}
 
@@ -61,7 +61,8 @@ public class PandaControlls : MonoBehaviour {
 		}
 		float Horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * movespeed; // float variable Horizontal set to the hrizontal axis mutiplied by deltatime multiplied by movespeed.  
 		float Vertical= Input.GetAxis("Vertical") * Time.deltaTime * movespeed; // float variable Vertical.
-		if(!BootySlammming){ // checks if the player is not bootyslamming.
+		if(!BootySlammming){
+			// checks if the player is not bootyslamming.
 			transform.position += Camera.main.transform.forward * Vertical; // adds the forward vector of the camera times by vertical.
 			transform.position += Camera.main.transform.right * Horizontal; // adds the right vector of the camera times by horizontal.
 			if(Horizontal <0) // checks if horizontal is less than 0.
@@ -89,6 +90,12 @@ public class PandaControlls : MonoBehaviour {
 
 	bool IsGrounded () {
 		return Physics.Raycast(transform.position,-Vector3.up,distToGround + 0.1f); // checks if the player is touching the floor using a raycast down.
+	}
+
+	public IEnumerator Unlock()
+	{
+		yield return new WaitForSeconds(0.5f);
+		Unlocking = false;
 	}
 
 	IEnumerator Jump ()

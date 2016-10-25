@@ -66,12 +66,14 @@
      <Compile Include="Assets\PrimitivePlus\Scripts\PrimitivePlusMeshes.cs" />
      <Compile Include="Assets\PrimitivePlus\Scripts\PrimitivePlusObject.cs" />
      <Compile Include="Assets\PrimitivePlus\Scripts\PrimitivePlusType.cs" />
+     <Compile Include="Assets\Resources\Scripts\AutoText.cs" />
      <Compile Include="Assets\Resources\Scripts\BombScript.cs" />
      <Compile Include="Assets\Resources\Scripts\CircleRun.cs" />
      <Compile Include="Assets\Resources\Scripts\CutSceneCamera.cs" />
      <Compile Include="Assets\Resources\Scripts\ExplosionTest.cs" />
      <Compile Include="Assets\Resources\Scripts\FistScript.cs" />
      <Compile Include="Assets\Resources\Scripts\Gem_Script.cs" />
+     <Compile Include="Assets\Resources\Scripts\InteractableCharacter.cs" />
      <Compile Include="Assets\Resources\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Resources\Scripts\PandaCamera.cs" />
      <Compile Include="Assets\Resources\Scripts\PandaControlls.cs" />

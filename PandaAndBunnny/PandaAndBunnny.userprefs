@@ -1,10 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\ExplosionTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\AutoText.cs">
     <Files>
-      <File FileName="Assets\Resources\Scripts\ExplosionTest.cs" Line="20" Column="2" />
-      <File FileName="Assets\Resources\Scripts\Gem_Script.cs" Line="7" Column="25" />
-      <File FileName="Assets\Resources\Scripts\PandaTalking.cs" Line="39" Column="3" />
+      <File FileName="Assets\Resources\Scripts\ExplosionTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\Gem_Script.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\PandaTalking.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\MainMenu.cs" Line="8" Column="2" />
+      <File FileName="Assets\Resources\Scripts\InteractableCharacter.cs" Line="23" Column="31" />
+      <File FileName="Assets\Resources\Scripts\PlayerHandler.cs" Line="20" Column="49" />
+      <File FileName="Assets\Resources\Scripts\AutoText.cs" Line="81" Column="2" />
+      <File FileName="Assets\Resources\Scripts\PandaControlls.cs" Line="92" Column="66" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
